@@ -981,3 +981,325 @@ body {
         padding: 28px 20px;
     }
 }
+
+/* ==========================================
+   Pricing Section - Epic 4
+   ========================================== */
+.pricing-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, var(--white) 0%, var(--light-bg) 100%);
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: var(--white);
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px 32px;
+    transition: all var(--transition-base);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
+}
+
+/* Featured Card */
+.pricing-card.featured {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.08) translateY(-8px);
+}
+
+.pricing-card.featured .plan-name,
+.pricing-card.featured .plan-description,
+.pricing-card.featured .currency,
+.pricing-card.featured .amount,
+.pricing-card.featured .period,
+.pricing-card.featured .pricing-features li span {
+    color: var(--white);
+}
+
+.pricing-card.featured .pricing-features li i {
+    color: var(--secondary-color);
+}
+
+.pricing-card.featured .btn-primary {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+.pricing-card.featured .btn-primary:hover {
+    background-color: var(--light-bg);
+    color: var(--primary-dark);
+}
+
+/* Featured Badge */
+.featured-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: var(--shadow-md);
+}
+
+.featured-badge i {
+    font-size: 12px;
+}
+
+/* Pricing Header */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.plan-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.plan-description {
+    font-size: 14px;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+/* Pricing Price */
+.pricing-price {
+    text-align: center;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.pricing-card.featured .pricing-price {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.currency {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-gray);
+    vertical-align: top;
+}
+
+.amount {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1;
+}
+
+.amount.custom {
+    font-size: 42px;
+}
+
+.period {
+    font-size: 16px;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+/* Pricing Features */
+.pricing-features {
+    list-style: none;
+    margin-bottom: 32px;
+    flex-grow: 1;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    font-size: 15px;
+    color: var(--text-dark);
+}
+
+.pricing-features li i {
+    font-size: 18px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.pricing-features li.disabled {
+    opacity: 0.4;
+}
+
+.pricing-features li.disabled i {
+    color: var(--text-gray);
+}
+
+/* Pricing Button */
+.btn-pricing {
+    width: 100%;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Pricing Note */
+.pricing-note {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.pricing-note p {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: var(--text-gray);
+    background-color: var(--light-bg);
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+}
+
+.pricing-note i {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+/* Pricing Responsive Design */
+@media (max-width: 992px) {
+    .pricing-section {
+        padding: 80px 0;
+    }
+    
+    .pricing-grid {
+        gap: 24px;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1.02);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: scale(1.05) translateY(-8px);
+    }
+    
+    .amount {
+        font-size: 48px;
+    }
+    
+    .amount.custom {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 60px 0;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1);
+        order: -1;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: scale(1.02) translateY(-8px);
+    }
+    
+    .pricing-card {
+        padding: 36px 28px;
+    }
+    
+    .plan-name {
+        font-size: 24px;
+    }
+    
+    .amount {
+        font-size: 48px;
+    }
+    
+    .amount.custom {
+        font-size: 36px;
+    }
+    
+    .pricing-features li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-section {
+        padding: 50px 0;
+    }
+    
+    .pricing-card {
+        padding: 32px 24px;
+    }
+    
+    .plan-name {
+        font-size: 22px;
+    }
+    
+    .amount {
+        font-size: 42px;
+    }
+    
+    .amount.custom {
+        font-size: 32px;
+    }
+    
+    .currency {
+        font-size: 20px;
+    }
+    
+    .period {
+        font-size: 14px;
+    }
+    
+    .pricing-note p {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}

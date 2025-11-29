@@ -147,7 +147,161 @@
         </div>
     </section>
 
-    <!-- Epic 4: Pricing Section - Coming Soon -->
+    <!-- Epic 4: Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Perfect Plan</h2>
+                <p class="section-subtitle">
+                    Flexible pricing options designed to scale with your business needs.
+                </p>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Basic</h3>
+                        <p class="plan-description">Perfect for small businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">29</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Up to 1,000 products</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>1 location</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Basic reporting</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Email support</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mobile app access</span>
+                        </li>
+                        <li class="disabled">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="disabled">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Multi-user access</span>
+                        </li>
+                    </ul>
+                    <a href="#signup" class="btn btn-pricing btn-outline">Get Started</a>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i>
+                        Most Popular
+                    </div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-description">Best for growing businesses</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">79</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unlimited products</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Up to 5 locations</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced reporting</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mobile app access</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Up to 10 users</span>
+                        </li>
+                    </ul>
+                    <a href="#signup" class="btn btn-pricing btn-primary">Get Started</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-description">For large organizations</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="amount custom">Custom</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unlimited everything</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unlimited locations</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom reporting</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 dedicated support</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>White-label solution</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Custom integrations</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Unlimited users</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-pricing btn-outline">Contact Sales</a>
+                </div>
+            </div>
+
+            <!-- Pricing Note -->
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> All plans include a 14-day free trial. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Epic 5: Contact Us Form - Coming Soon -->
     <!-- Epic 6: Footer - Coming Soon -->
 </main>

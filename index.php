@@ -303,7 +303,7 @@
     </section>
 
     <!-- Epic 5: Contact Us Form - Coming Soon -->
-    <!-- Epic 6: Footer - Coming Soon -->
+    <!-- Epic 6: Footer - Included in footer.php -->
 </main>
 
 <?php include 'includes/footer.php'; ?>
